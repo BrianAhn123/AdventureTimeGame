@@ -75,16 +75,19 @@ namespace AdventureTimeGame
                     textBox.Text = "You enter the cave and hear Marceline playing her Bass in her home. Will you Interrupt her or Wait?";
                     option1Label.Text = "Red Button: Interrupt her";
                     option2Label.Text = "Green Button: Wait";
+                    option3Label.Text = "";
                     break;
                 case 5:
                     textBox.Text = "You enter the Ice kingdom and its quite Chilly and you see Ice King Kidnapping LSP! Sneak Attack or Run at Him?";
                     option1Label.Text = "Red Button: Sneak Attack";
                     option2Label.Text = "Green Button: Run at Him";
+                    option3Label.Text = "";
                     break;
                 case 6:
                     textBox.Text = "You enter the Candy Kingdom and see PB drinking some tea. Ask for a Quest or Hang out with her?";
                     option1Label.Text = "Red Button: Ask for a Quest";
                     option2Label.Text = "Green Button: Hang out with her";
+                    option3Label.Text = "";
                     break;
                 case 7:
                     textBox.Text = "PB Gave you a quest to Save LSP from the Ice King. Accept or Don't?";
@@ -97,25 +100,68 @@ namespace AdventureTimeGame
                     option2Label.Text = "Green Button: No";
                     break;
                 case 9:
+                    option1Label.Text = "";
+                    option2Label.Text = "";
                     textBox.Text = "You help her with the Chemicals and the tube starts shaking";
+                    Refresh();
+                    Thread.Sleep(2000);
+                    
+                    explode = Random.Next(0, 5); 
+                    if(explode == 0)
+                    {
+                        page = 14;
+                        displayPage();
+                    }
+                    else if (explode == 1 && explode > 1)
+                    {
+                        page = 13;
+                        displayPage();
+                    }
+                    Refresh();
                     break;
                 case 10:
+                    option1Label.Text = "";
+                    option2Label.Text = "";
                     textBox.Text = "The Tube starts shaking in PB's Hand you run over to save her";
+                    Refresh();
+                    Thread.Sleep(2000);
+
+                    save = Random.Next(1, 101);
+                    if(save == 65 && save < 65)
+                    {
+                        page = 12;
+                        displayPage();
+                    }
+                    else if (save > 65)
+                    {
+                        page = 11;
+                        displayPage();
+                    }
                     break;
                 case 11:
-                    textBox.Text = "The Tube explodes in her Hand and there was Gum everywhere.(You gained the Failure Route) PLay again?";
+                    textBox.Text = "The Tube explodes in her Hand and there was Gum everywhere.(You gained the Failure Route) Play again?";
+                    option1Label.Text = "Red Button: Yes";
+                    option2Label.Text = "Green Button: No";
                     break;
                 case 12:
-                    textBox.Text = "You saved her from the explosion and she was glad you were there. (You won the Heroic Ending)";
+                    textBox.Text = "You saved her from the explosion and she was glad you were there. (You won the Heroic Ending) Play Again?";
+                    option1Label.Text = "Red Button: Yes";
+                    option2Label.Text = "Green Button: No";
                     break;
                 case 13:
-                    textBox.Text = "The chemicals Stabilize and you both create a new Element. (Walter White Ending)";
+                    textBox.Text = "The chemicals Stabilize and you both create a new Element. (Walter White Ending) Play Again)";
+                    option1Label.Text = "Red Button: Yes";
+                    option2Label.Text = "Green Button: No";
                     break;
                 case 14:
-                    textBox.Text = "The Chemicals create a huge explosion and you both died. (Failed Chemist Ending";
+                    textBox.Text = "The Chemicals create a huge explosion and you both died. (Failed Chemist Ending) Play Again?";
+                    option1Label.Text = "Red Button: Yes";
+                    option2Label.Text = "Green Button: No";
                     break;
                 case 15:
-                    textBox.Text = "You Go in Loud and get frozen in Ice and ice King gets away (Frozen Ending)";
+                    textBox.Text = "You Go in Loud and get frozen in Ice and ice King gets away (Frozen Ending) Play Again?";
+                    option1Label.Text = "Red Button: Yes";
+                    option2Label.Text = "Green Button: No";
                     break;
                 case 16:
                     textBox.Text = "Ice King Gets surprised and knocks you back and charges a Ice Beam Dodge it or Deflect?";
@@ -217,7 +263,7 @@ namespace AdventureTimeGame
             }
             else if (page == 5)
             {
-                page = 15;
+                page = 16;
             }
             else if (page == 6)
             {
@@ -233,27 +279,44 @@ namespace AdventureTimeGame
             }
             else if (page == 9)
             {
-                
+                Refresh();
+                if (explode == 0)
+                {
+                    page = 14;
+                }
+                else
+                {
+                    page = 13;
+                }
             }
             else if (page == 10)
             {
-
+                Refresh();
+                Thread.Sleep(2000);
+                if (save == 65 && save < 65)
+                {
+                    page = 12;
+                }
+                else if(save > 65)
+                {
+                    page = 11;
+                }
             }
             else if (page == 11)
             {
-
+                page = 1;
             }
             else if (page == 12)
             {
-
+                page = 1;
             }
             else if (page == 13)
             {
-
+                page = 1;
             }
             else if (page == 14)
             {
-
+                page = 1;
             }
             else if (page == 15)
             {
@@ -261,27 +324,27 @@ namespace AdventureTimeGame
             }
             else if (page == 16)
             {
-
+                page = 18;
             }
             else if (page == 17)
             {
-
+                page = 21; 
             }
             else if (page == 18)
             {
-
+                page = 1; 
             }
             else if (page == 19)
             {
-
+                page = 1; 
             }
             else if (page == 20)
             {
-
+                page = 1; 
             }
             else if (page == 21)
             {
-
+                page = 22;
             }
             else if (page == 22)
             {
@@ -347,35 +410,35 @@ namespace AdventureTimeGame
         {
             if (page == 1)
             {
-
+                page = 3; 
             }
             else if (page == 2)
             {
-
+                page = 5;
             }
             else if (page == 3)
             {
-
+                page = 99; 
             }
             else if (page == 4)
             {
-
+                page = 25;
             }
             else if (page == 5)
             {
-
+                page = 15;
             }
             else if (page == 6)
             {
-
+                page = 8;
             }
             else if (page == 7)
             {
-
+                page = 8;
             }
             else if (page == 8)
             {
-
+                page = 10;
             }
             else if (page == 9)
             {
@@ -496,7 +559,7 @@ namespace AdventureTimeGame
             }
             else if (page == 2)
             {
-
+                page = 4; 
             }
             else if (page == 3)
             {
