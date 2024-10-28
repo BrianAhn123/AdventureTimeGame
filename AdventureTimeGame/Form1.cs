@@ -14,7 +14,7 @@ namespace AdventureTimeGame
     public partial class Form1 : Form
     {
         int page = 1;
-        int deflect = 0;
+        int dodge = 0;
         int save = 0;
         int explode = 0;
         int flute = 0;
@@ -58,7 +58,7 @@ namespace AdventureTimeGame
                 case 1:
                     textBox.Text = "You Wake up in your Lovely Treehouse Do you want to go on a Adventure or go back to bed?";
                     option1Label.Text = "Red Button: Go on a Adventure";
-                    option2Label.Text = "Green Button: Go back to bed"; 
+                    option2Label.Text = "Green Button: Go back to bed";
                     break;
                 case 2:
                     textBox.Text = "You go outside and look at Three Directions which way do you go?";
@@ -69,7 +69,7 @@ namespace AdventureTimeGame
                 case 3:
                     textBox.Text = "You went back to sleep while jake makes Bacon Pancakes (You took the Tired Route) Play Again? ";
                     option1Label.Text = "Red Button: Yes";
-                    option2Label.Text = "Green Button: No"; 
+                    option2Label.Text = "Green Button: No";
                     break;
                 case 4:
                     textBox.Text = "You enter the cave and hear Marceline playing her Bass in her home. Will you Interrupt her or Wait?";
@@ -105,9 +105,9 @@ namespace AdventureTimeGame
                     textBox.Text = "You help her with the Chemicals and the tube starts shaking";
                     Refresh();
                     Thread.Sleep(2000);
-                    
-                    explode = Random.Next(0, 5); 
-                    if(explode == 0)
+
+                    explode = Random.Next(0, 5);
+                    if (explode == 0)
                     {
                         page = 14;
                         displayPage();
@@ -127,7 +127,7 @@ namespace AdventureTimeGame
                     Thread.Sleep(2000);
 
                     save = Random.Next(1, 101);
-                    if(save == 65 && save < 65)
+                    if (save == 65 && save < 65)
                     {
                         page = 12;
                         displayPage();
@@ -168,19 +168,43 @@ namespace AdventureTimeGame
                     option1Label.Text = "Red Button: Use your Shield to Deflect";
                     option2Label.Text = "Green Button: Dodge the attack";
                     break;
+                case 68:
+                    textBox.Text = "You try to Dodge";
+                    option1Label.Text = "";
+                    option2Label.Text = "";
+
+                    dodge = Random.Next(0, 2);
+
+                    if (dodge == 0)
+                    {
+                        page = 17;
+                        displayPage();
+                    }
+                    else
+                    {
+                        page = 19;
+                        displayPage();
+                    }
+                    break;
                 case 17:
                     textBox.Text = "You Successfully dodged the attack and prepare to fight back";
                     option1Label.Text = "Red Button: Use your Fist?";
                     option2Label.Text = "Green Button: Use your Sword?";
                     break;
                 case 18:
-                    textBox.Text = "Successfully Deflected the Ice beam and froze the Ice king, Lsp was saved (Heroiz Ending)";
+                    textBox.Text = "Successfully Deflected the Ice beam and froze the Ice king, Lsp was saved (Heroiz Ending)"; option1Label.Text = "Red Button: Yes";
+                    option1Label.Text = "Red Button: Yes";
+                    option2Label.Text = "Green Button: No";
                     break;
                 case 19:
                     textBox.Text = "You tried to dodge and get hit by the ice beam turning into a Ice Sphere (Frozen Ending)";
+                    option1Label.Text = "Red Button: Yes";
+                    option2Label.Text = "Green Button: No";
                     break;
                 case 20:
                     textBox.Text = "You used your sword but Ice King Freezes it and then Freezes You (Frozen ending)";
+                    option1Label.Text = "Red Button: Yes";
+                    option2Label.Text = "Green Button: No";
                     break;
                 case 21:
                     textBox.Text = "You Punch Ice King in the Face Knocking him out. Will you take him to the Candy Kingdom or go Home";
@@ -189,9 +213,14 @@ namespace AdventureTimeGame
                     break;
                 case 22:
                     textBox.Text = "You take the Ice king to the Candy Kingdom YOU WIN (Ultimate Hero)";
+                    option1Label.Text = "Red Button: Yes";
+                    option2Label.Text = "Green Button: No";
+
                     break;
                 case 23:
                     textBox.Text = "You Go Home leaving the Ice King Behind (Lazy Hero)";
+                    option1Label.Text = "Red Button: Yes";
+                    option2Label.Text = "Green Button: No";
                     break;
                 case 24:
                     textBox.Text = "You Interrupt Marceline's Song and she gets pissed at you. Calm her down or do nothing?";
@@ -208,15 +237,36 @@ namespace AdventureTimeGame
                     break;
                 case 27:
                     textBox.Text = "You Do Nothing and you get sent to the Nightnosphere where your soul was sucked (Souless Warrior)";
+                    option1Label.Text = "Red Button: Yes";
+                    option2Label.Text = "Green Button: No";
                     break;
                 case 28:
                     textBox.Text = "She Shrugs it off and kicks you out of her house (Boring ending)";
+                    option1Label.Text = "Red Button: Yes";
+                    option2Label.Text = "Green Button: No";
                     break;
                 case 29:
                     textBox.Text = "You start playing your flute with Marceline";
+                    option1Label.Text = "";
+                    option2Label.Text = "";
+
+                    flute = Random.Next(1, 11);
+
+                    if (flute < 7)
+                    {
+                        page = 31;
+                        displayPage();
+                    }
+                    else if (flute > 7)
+                    {
+                        page = 30;
+                        displayPage();
+                    }
                     break;
                 case 30:
                     textBox.Text = "You play horribly and get kicked out of the band (Mid Musician)";
+                    option1Label.Text = "Red Button: Yes";
+                    option2Label.Text = "Green Button: No";
                     break;
                 case 31:
                     textBox.Text = "You play pretty good and Marceline was Impressed. You're getting tired what do you do?";
@@ -225,9 +275,13 @@ namespace AdventureTimeGame
                     break;
                 case 32:
                     textBox.Text = "You and Marceline keep playing til midnight (Musical Ending)";
+                    option1Label.Text = "Red Button: Yes";
+                    option2Label.Text = "Green Button: No";
                     break;
                 case 33:
                     textBox.Text = "You go home and sleep after a long day";
+                    option1Label.Text = "Red Button: Yes";
+                    option2Label.Text = "Green Button: No";
                     break;
                 case 99:
                     textBox.Text = "Thank you for playing Adventure TIME!";
@@ -320,7 +374,7 @@ namespace AdventureTimeGame
             }
             else if (page == 15)
             {
-
+                page = 1;
             }
             else if (page == 16)
             {
@@ -348,53 +402,53 @@ namespace AdventureTimeGame
             }
             else if (page == 22)
             {
-
+                page = 1; 
             }
             else if (page == 23)
             {
-
+                page = 1;
             }
             else if (page == 24)
             {
-
+                page = 26;
             }
             else if (page == 25)
             {
-
+                page = 29; 
             }
             else if (page == 26)
             {
-
+                page = 25;
             }
             else if (page == 27)
             {
-
+                page = 1;
             }
             else if (page == 28)
             {
-
+                page = page = 1;
             }
             else if (page == 29)
             {
-
+                
             }
             else if (page == 30)
             {
-
+                page = 1;
             }
             else if (page == 31)
             {
-
+                page = 32;
             }
             else if (page == 32)
             {
-
+                page = 1;
             }
             else if (page == 33)
             {
-
+                page = 1;
             }
-            else if (page == 34)
+            else if (page == 99)
             {
 
             }
@@ -442,31 +496,31 @@ namespace AdventureTimeGame
             }
             else if (page == 9)
             {
-
+                
             }
             else if (page == 10)
             {
-
+                
             }
             else if (page == 11)
             {
-
+                page = 99;
             }
             else if (page == 12)
             {
-
+                page = 99; 
             }
             else if (page == 13)
             {
-
+                page = 99;
             }
             else if (page == 14)
             {
-
+                page = 99;
             }
             else if (page == 15)
             {
-
+                page = 99; 
             }
             else if (page == 16)
             {
@@ -474,27 +528,27 @@ namespace AdventureTimeGame
             }
             else if (page == 17)
             {
-
+                page = 20;
             }
             else if (page == 18)
             {
-
+                page = 99;
             }
             else if (page == 19)
             {
-
+                page = 99; 
             }
             else if (page == 20)
             {
-
+                page = 99;
             }
             else if (page == 21)
             {
-
+                page = page = 23;
             }
             else if (page == 22)
             {
-
+                page = 99;
             }
             else if (page == 23)
             {
@@ -502,45 +556,45 @@ namespace AdventureTimeGame
             }
             else if (page == 24)
             {
-
+                page = 27;
             }
             else if (page == 25)
             {
-
+                page = 28; 
             }
             else if (page == 26)
             {
-
+                page = page = 25; 
             }
             else if (page == 27)
             {
-
+                page = 99;
             }
             else if (page == 28)
             {
-
+                page = page = 99;
             }
             else if (page == 29)
             {
-
+                
             }
             else if (page == 30)
             {
-
+                page = 99; 
             }
             else if (page == 31)
             {
-
+                page = 33;
             }
             else if (page == 32)
             {
-
+                page = 99;
             }
             else if (page == 33)
             {
-
+                page = 99;
             }
-            else if (page == 34)
+            else if (page == 99)
             {
 
             }
