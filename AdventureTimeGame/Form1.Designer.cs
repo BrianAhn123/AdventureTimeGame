@@ -69,45 +69,55 @@
             // 
             // option1Button
             // 
+            this.option1Button.BackColor = System.Drawing.Color.Red;
             this.option1Button.Enabled = false;
-            this.option1Button.Location = new System.Drawing.Point(455, 514);
+            this.option1Button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.option1Button.FlatAppearance.BorderSize = 5;
+            this.option1Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.option1Button.Location = new System.Drawing.Point(447, 482);
             this.option1Button.Name = "option1Button";
-            this.option1Button.Size = new System.Drawing.Size(75, 23);
+            this.option1Button.Size = new System.Drawing.Size(87, 82);
             this.option1Button.TabIndex = 2;
-            this.option1Button.Text = "button1";
-            this.option1Button.UseVisualStyleBackColor = true;
+            this.option1Button.UseVisualStyleBackColor = false;
             this.option1Button.Click += new System.EventHandler(this.option1Button_Click);
             // 
             // option2Button
             // 
+            this.option2Button.BackColor = System.Drawing.Color.Lime;
             this.option2Button.Enabled = false;
-            this.option2Button.Location = new System.Drawing.Point(540, 460);
+            this.option2Button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.option2Button.FlatAppearance.BorderSize = 5;
+            this.option2Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.option2Button.Location = new System.Drawing.Point(540, 442);
             this.option2Button.Name = "option2Button";
-            this.option2Button.Size = new System.Drawing.Size(75, 23);
+            this.option2Button.Size = new System.Drawing.Size(75, 57);
             this.option2Button.TabIndex = 3;
-            this.option2Button.Text = "button2";
-            this.option2Button.UseVisualStyleBackColor = true;
+            this.option2Button.UseVisualStyleBackColor = false;
             this.option2Button.Click += new System.EventHandler(this.option2Button_Click);
             // 
             // option3Button
             // 
+            this.option3Button.BackColor = System.Drawing.Color.Cyan;
             this.option3Button.Enabled = false;
-            this.option3Button.Location = new System.Drawing.Point(455, 433);
+            this.option3Button.FlatAppearance.BorderSize = 5;
+            this.option3Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.option3Button.Location = new System.Drawing.Point(455, 405);
             this.option3Button.Name = "option3Button";
-            this.option3Button.Size = new System.Drawing.Size(75, 23);
+            this.option3Button.Size = new System.Drawing.Size(75, 57);
             this.option3Button.TabIndex = 4;
-            this.option3Button.Text = "button3";
-            this.option3Button.UseVisualStyleBackColor = true;
+            this.option3Button.UseVisualStyleBackColor = false;
             this.option3Button.Click += new System.EventHandler(this.option3Button_Click);
             // 
             // startButton
             // 
-            this.startButton.Location = new System.Drawing.Point(540, 326);
+            this.startButton.BackColor = System.Drawing.Color.Blue;
+            this.startButton.FlatAppearance.BorderSize = 5;
+            this.startButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.startButton.Location = new System.Drawing.Point(554, 321);
             this.startButton.Name = "startButton";
-            this.startButton.Size = new System.Drawing.Size(75, 23);
+            this.startButton.Size = new System.Drawing.Size(42, 35);
             this.startButton.TabIndex = 5;
-            this.startButton.Text = "button4";
-            this.startButton.UseVisualStyleBackColor = true;
+            this.startButton.UseVisualStyleBackColor = false;
             this.startButton.Click += new System.EventHandler(this.startButton_Click);
             // 
             // option1Label

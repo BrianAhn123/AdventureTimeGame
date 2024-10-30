@@ -133,4 +133,28 @@
   <data name="adventurelogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\adventurelogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Adventure_Time___Finns_Scream" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Adventure Time - Finns Scream.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Adventure_Time___Opening__1080p_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Adventure Time - Opening (1080p).wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Bacon_Pancakes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bacon Pancakes.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="jake" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jake.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kidnapped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kidnapped.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Map" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Map.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="marceline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\marceline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="treehouse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\treehouse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

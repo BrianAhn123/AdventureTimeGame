@@ -96,13 +96,49 @@
     <None Include="Resources\Bmobackground3.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Redbutton.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Redbutton1.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\adventurelogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Redbutton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trianglebutton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\greenbutton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bacon Pancakes.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adventure Time - Finns Scream.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adventure Time - Opening %281080p%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treehouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marceline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kidnapped.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\candykingdom.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

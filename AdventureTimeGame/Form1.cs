@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using System.Media; 
 
 namespace AdventureTimeGame
 {
@@ -18,10 +19,11 @@ namespace AdventureTimeGame
         int save = 0;
         int explode = 0;
         int flute = 0;
-        int luck;
         Random Random = new Random();
         public Form1()
-        {
+        { 
+            SoundPlayer intro = new SoundPlayer(Properties.Resources.Adventure_Time___Opening__1080p_);
+            intro.Play();
             InitializeComponent();
             textBox.Text = "Press Small Blue Button to Start!";
         }
@@ -51,39 +53,53 @@ namespace AdventureTimeGame
 
         public void displayPage()
         {
+            SoundPlayer scream = new SoundPlayer(Properties.Resources.Adventure_Time___Finns_Scream);
+            SoundPlayer pancake = new SoundPlayer(Properties.Resources.Bacon_Pancakes);
+            SoundPlayer intro = new SoundPlayer(Properties.Resources.Adventure_Time___Opening__1080p_);
+
+
             switch (page)
             {
                 case 0:
                     break;
                 case 1:
+                    pancake.Stop();
+                    intro.Stop();
+                    imageBox.Image = Properties.Resources.treehouse;
                     textBox.Text = "You Wake up in your Lovely Treehouse Do you want to go on a Adventure or go back to bed?";
                     option1Label.Text = "Red Button: Go on a Adventure";
                     option2Label.Text = "Green Button: Go back to bed";
                     break;
                 case 2:
+                    imageBox.Image = Properties.Resources.Map;
                     textBox.Text = "You go outside and look at Three Directions which way do you go?";
                     option1Label.Text = "Red Button: Candy Kingdom";
                     option2Label.Text = "Green Button: Ice Kingdom";
-                    option3Label.Text = "Blue Triangle Button: Marceline's Cave";
+                    option3Label.Text = "Blue Button: Marceline's Cave";
                     break;
                 case 3:
+                    pancake.Play();
+                    imageBox.Image = Properties.Resources.jake; 
                     textBox.Text = "You went back to sleep while jake makes Bacon Pancakes (You took the Tired Route) Play Again? ";
                     option1Label.Text = "Red Button: Yes";
                     option2Label.Text = "Green Button: No";
                     break;
                 case 4:
+                    imageBox.Image = Properties.Resources.marceline;
                     textBox.Text = "You enter the cave and hear Marceline playing her Bass in her home. Will you Interrupt her or Wait?";
                     option1Label.Text = "Red Button: Interrupt her";
                     option2Label.Text = "Green Button: Wait";
                     option3Label.Text = "";
                     break;
                 case 5:
+                    imageBox.Image = Properties.Resources.kidnapped;
                     textBox.Text = "You enter the Ice kingdom and its quite Chilly and you see Ice King Kidnapping LSP! Sneak Attack or Run at Him?";
                     option1Label.Text = "Red Button: Sneak Attack";
                     option2Label.Text = "Green Button: Run at Him";
                     option3Label.Text = "";
                     break;
                 case 6:
+                    imageBox.Image = Properties.Resources
                     textBox.Text = "You enter the Candy Kingdom and see PB drinking some tea. Ask for a Quest or Hang out with her?";
                     option1Label.Text = "Red Button: Ask for a Quest";
                     option2Label.Text = "Green Button: Hang out with her";
@@ -107,12 +123,12 @@ namespace AdventureTimeGame
                     Thread.Sleep(2000);
 
                     explode = Random.Next(0, 5);
-                    if (explode == 0)
+                    if (explode == 1)
                     {
                         page = 14;
                         displayPage();
                     }
-                    else if (explode == 1 && explode > 1)
+                    else if (explode > 1)
                     {
                         page = 13;
                         displayPage();
@@ -139,6 +155,7 @@ namespace AdventureTimeGame
                     }
                     break;
                 case 11:
+                    scream.Play();
                     textBox.Text = "The Tube explodes in her Hand and there was Gum everywhere.(You gained the Failure Route) Play again?";
                     option1Label.Text = "Red Button: Yes";
                     option2Label.Text = "Green Button: No";
@@ -154,11 +171,13 @@ namespace AdventureTimeGame
                     option2Label.Text = "Green Button: No";
                     break;
                 case 14:
+                    scream.Play();
                     textBox.Text = "The Chemicals create a huge explosion and you both died. (Failed Chemist Ending) Play Again?";
                     option1Label.Text = "Red Button: Yes";
                     option2Label.Text = "Green Button: No";
                     break;
                 case 15:
+                    scream.Play();
                     textBox.Text = "You Go in Loud and get frozen in Ice and ice King gets away (Frozen Ending) Play Again?";
                     option1Label.Text = "Red Button: Yes";
                     option2Label.Text = "Green Button: No";
@@ -172,6 +191,8 @@ namespace AdventureTimeGame
                     textBox.Text = "You try to Dodge";
                     option1Label.Text = "";
                     option2Label.Text = "";
+                    Refresh();
+                    Thread.Sleep(2000);
 
                     dodge = Random.Next(0, 2);
 
@@ -185,6 +206,7 @@ namespace AdventureTimeGame
                         page = 19;
                         displayPage();
                     }
+                    Refresh();
                     break;
                 case 17:
                     textBox.Text = "You Successfully dodged the attack and prepare to fight back";
@@ -197,11 +219,13 @@ namespace AdventureTimeGame
                     option2Label.Text = "Green Button: No";
                     break;
                 case 19:
+                    scream.Play();
                     textBox.Text = "You tried to dodge and get hit by the ice beam turning into a Ice Sphere (Frozen Ending)";
                     option1Label.Text = "Red Button: Yes";
                     option2Label.Text = "Green Button: No";
                     break;
                 case 20:
+                    scream.Play();
                     textBox.Text = "You used your sword but Ice King Freezes it and then Freezes You (Frozen ending)";
                     option1Label.Text = "Red Button: Yes";
                     option2Label.Text = "Green Button: No";
@@ -249,6 +273,8 @@ namespace AdventureTimeGame
                     textBox.Text = "You start playing your flute with Marceline";
                     option1Label.Text = "";
                     option2Label.Text = "";
+                    Refresh();
+                    Thread.Sleep(2000);
 
                     flute = Random.Next(1, 11);
 
@@ -262,8 +288,10 @@ namespace AdventureTimeGame
                         page = 30;
                         displayPage();
                     }
+                    Refresh();
                     break;
                 case 30:
+                    scream.Play();
                     textBox.Text = "You play horribly and get kicked out of the band (Mid Musician)";
                     option1Label.Text = "Red Button: Yes";
                     option2Label.Text = "Green Button: No";
@@ -285,7 +313,9 @@ namespace AdventureTimeGame
                     break;
                 case 99:
                     textBox.Text = "Thank you for playing Adventure TIME!";
-                    Thread.Sleep(2000);
+                    option1Label.Text = "";
+                    option2Label.Text = "";
+                    Thread.Sleep(5000);
                     Close();
                     break;
                 case 69:
@@ -430,7 +460,19 @@ namespace AdventureTimeGame
             }
             else if (page == 29)
             {
-                
+                Refresh();
+                Thread.Sleep(2000);
+
+                if (flute < 7)
+                {
+                    page = 31;
+                    displayPage();
+                }
+                else if (flute > 7)
+                {
+                    page = 30;
+                    displayPage();
+                }
             }
             else if (page == 30)
             {
