@@ -99,7 +99,7 @@ namespace AdventureTimeGame
                     option3Label.Text = "";
                     break;
                 case 6:
-                    imageBox.Image = Properties.Resources
+                    
                     textBox.Text = "You enter the Candy Kingdom and see PB drinking some tea. Ask for a Quest or Hang out with her?";
                     option1Label.Text = "Red Button: Ask for a Quest";
                     option2Label.Text = "Green Button: Hang out with her";
@@ -187,89 +187,89 @@ namespace AdventureTimeGame
                     option1Label.Text = "Red Button: Use your Shield to Deflect";
                     option2Label.Text = "Green Button: Dodge the attack";
                     break;
-                case 68:
+                case 17:
                     textBox.Text = "You try to Dodge";
                     option1Label.Text = "";
                     option2Label.Text = "";
                     Refresh();
                     Thread.Sleep(2000);
 
-                    dodge = Random.Next(0, 2);
+                    dodge = Random.Next(0, 3);
 
-                    if (dodge == 0)
+                    if (dodge < 1)
                     {
-                        page = 17;
+                        page = 18;
                         displayPage();
                     }
-                    else
+                    else if (dodge > 2)
                     {
-                        page = 19;
+                        page = 20;
                         displayPage();
                     }
                     Refresh();
                     break;
-                case 17:
+                case 18:
                     textBox.Text = "You Successfully dodged the attack and prepare to fight back";
                     option1Label.Text = "Red Button: Use your Fist?";
                     option2Label.Text = "Green Button: Use your Sword?";
                     break;
-                case 18:
-                    textBox.Text = "Successfully Deflected the Ice beam and froze the Ice king, Lsp was saved (Heroiz Ending)"; option1Label.Text = "Red Button: Yes";
-                    option1Label.Text = "Red Button: Yes";
-                    option2Label.Text = "Green Button: No";
-                    break;
                 case 19:
-                    scream.Play();
-                    textBox.Text = "You tried to dodge and get hit by the ice beam turning into a Ice Sphere (Frozen Ending)";
+                    textBox.Text = "Successfully Deflected the Ice beam and froze the Ice king, Lsp was saved (Heroiz Ending)"; option1Label.Text = "Red Button: Yes";
                     option1Label.Text = "Red Button: Yes";
                     option2Label.Text = "Green Button: No";
                     break;
                 case 20:
                     scream.Play();
-                    textBox.Text = "You used your sword but Ice King Freezes it and then Freezes You (Frozen ending)";
+                    textBox.Text = "You tried to dodge and get hit by the ice beam turning into a Ice Sphere (Frozen Ending)";
                     option1Label.Text = "Red Button: Yes";
                     option2Label.Text = "Green Button: No";
                     break;
                 case 21:
+                    scream.Play();
+                    textBox.Text = "You used your sword but Ice King Freezes it and then Freezes You (Frozen ending)";
+                    option1Label.Text = "Red Button: Yes";
+                    option2Label.Text = "Green Button: No";
+                    break;
+                case 22:
                     textBox.Text = "You Punch Ice King in the Face Knocking him out. Will you take him to the Candy Kingdom or go Home";
                     option1Label.Text = "Red Button: Take Ice King to the Candy Kingdom";
                     option2Label.Text = "Green Button: Go Home";
                     break;
-                case 22:
+                case 23:
                     textBox.Text = "You take the Ice king to the Candy Kingdom YOU WIN (Ultimate Hero)";
                     option1Label.Text = "Red Button: Yes";
                     option2Label.Text = "Green Button: No";
 
                     break;
-                case 23:
+                case 24:
                     textBox.Text = "You Go Home leaving the Ice King Behind (Lazy Hero)";
                     option1Label.Text = "Red Button: Yes";
                     option2Label.Text = "Green Button: No";
                     break;
-                case 24:
+                case 25:
                     textBox.Text = "You Interrupt Marceline's Song and she gets pissed at you. Calm her down or do nothing?";
                     option1Label.Text = "Red Button: Calm her Down";
                     option2Label.Text = "Green Button: Do Nothing";
                     break;
-                case 25:
+                case 26:
                     textBox.Text = "You let Marceline play her song and asks you to join her band";
                     option1Label.Text = "Red Button: Accept to join her band";
                     option2Label.Text = "Green Button: Don't Accept";
                     break;
-                case 26:
+                case 27:
                     textBox.Text = "You Calm her down and she continues her song";
                     break;
-                case 27:
+                case 28:
                     textBox.Text = "You Do Nothing and you get sent to the Nightnosphere where your soul was sucked (Souless Warrior)";
                     option1Label.Text = "Red Button: Yes";
                     option2Label.Text = "Green Button: No";
                     break;
-                case 28:
+                case 29:
                     textBox.Text = "She Shrugs it off and kicks you out of her house (Boring ending)";
                     option1Label.Text = "Red Button: Yes";
                     option2Label.Text = "Green Button: No";
                     break;
-                case 29:
+                case 30:
                     textBox.Text = "You start playing your flute with Marceline";
                     option1Label.Text = "";
                     option2Label.Text = "";
@@ -280,38 +280,39 @@ namespace AdventureTimeGame
 
                     if (flute < 7)
                     {
-                        page = 31;
+                        page = 32;
                         displayPage();
                     }
                     else if (flute > 7)
                     {
-                        page = 30;
+                        page = 31;
                         displayPage();
                     }
                     Refresh();
                     break;
-                case 30:
+                case 31:
                     scream.Play();
                     textBox.Text = "You play horribly and get kicked out of the band (Mid Musician)";
                     option1Label.Text = "Red Button: Yes";
                     option2Label.Text = "Green Button: No";
                     break;
-                case 31:
+                case 32:
                     textBox.Text = "You play pretty good and Marceline was Impressed. You're getting tired what do you do?";
                     option1Label.Text = "Red Button: Keep Playing?";
                     option2Label.Text = "Green Button: Go Home";
                     break;
-                case 32:
+                case 33:
                     textBox.Text = "You and Marceline keep playing til midnight (Musical Ending)";
                     option1Label.Text = "Red Button: Yes";
                     option2Label.Text = "Green Button: No";
                     break;
-                case 33:
+                case 34:
                     textBox.Text = "You go home and sleep after a long day";
                     option1Label.Text = "Red Button: Yes";
                     option2Label.Text = "Green Button: No";
                     break;
                 case 99:
+                    Refresh();
                     textBox.Text = "Thank you for playing Adventure TIME!";
                     option1Label.Text = "";
                     option2Label.Text = "";
@@ -343,7 +344,7 @@ namespace AdventureTimeGame
             }
             else if (page == 4)
             {
-                page = 24;
+                page = 25;
             }
             else if (page == 5)
             {
@@ -408,15 +409,11 @@ namespace AdventureTimeGame
             }
             else if (page == 16)
             {
-                page = 18;
-            }
-            else if (page == 17)
-            {
-                page = 21; 
+                page = 19;
             }
             else if (page == 18)
             {
-                page = 1; 
+                page = 22; 
             }
             else if (page == 19)
             {
@@ -428,65 +425,69 @@ namespace AdventureTimeGame
             }
             else if (page == 21)
             {
-                page = 22;
+                page = 1; 
             }
             else if (page == 22)
             {
-                page = 1; 
+                page = 23;
             }
             else if (page == 23)
             {
-                page = 1;
+                page = 1; 
             }
             else if (page == 24)
             {
-                page = 26;
+                page = 1;
             }
             else if (page == 25)
             {
-                page = 29; 
+                page = 27;
             }
             else if (page == 26)
             {
-                page = 25;
+                page = 30; 
             }
             else if (page == 27)
             {
-                page = 1;
+                page = 26;
             }
             else if (page == 28)
             {
-                page = page = 1;
+                page = 1;
             }
             else if (page == 29)
+            {
+                page = page = 1;
+            }
+            else if (page == 30)
             {
                 Refresh();
                 Thread.Sleep(2000);
 
                 if (flute < 7)
                 {
-                    page = 31;
+                    page = 32;
                     displayPage();
                 }
                 else if (flute > 7)
                 {
-                    page = 30;
+                    page = 31;
                     displayPage();
                 }
             }
-            else if (page == 30)
-            {
-                page = 1;
-            }
             else if (page == 31)
             {
-                page = 32;
+                page = 1;
             }
             else if (page == 32)
             {
-                page = 1;
+                page = 32;
             }
             else if (page == 33)
+            {
+                page = 1;
+            }
+            else if (page == 34)
             {
                 page = 1;
             }
@@ -518,7 +519,7 @@ namespace AdventureTimeGame
             }
             else if (page == 4)
             {
-                page = 25;
+                page = 26;
             }
             else if (page == 5)
             {
@@ -566,73 +567,87 @@ namespace AdventureTimeGame
             }
             else if (page == 16)
             {
-
+                page = 17;
             }
             else if (page == 17)
             {
-                page = 20;
+                if (dodge < 1)
+                {
+                    page = 18;
+                    displayPage();
+                }
+                else if (dodge > 2)
+                {
+                    page = 20;
+                    displayPage();
+                }
+                Refresh();
             }
             else if (page == 18)
             {
-                page = 99;
+                page = 21;
             }
             else if (page == 19)
             {
-                page = 99; 
+                page = 99;
             }
             else if (page == 20)
             {
-                page = 99;
+                page = 99; 
             }
             else if (page == 21)
             {
-                page = page = 23;
+                page = 99;
             }
             else if (page == 22)
             {
-                page = 99;
+                page = 25;
             }
             else if (page == 23)
             {
-
+                page = 99;
             }
             else if (page == 24)
             {
-                page = 27;
+
             }
             else if (page == 25)
             {
-                page = 28; 
+                page = 28;
             }
             else if (page == 26)
             {
-                page = page = 25; 
+                page = 29; 
             }
             else if (page == 27)
             {
-                page = 99;
+                page = page = 26; 
             }
             else if (page == 28)
             {
-                page = page = 99;
+                page = 99;
             }
             else if (page == 29)
             {
-                
+                page = page = 99;
             }
             else if (page == 30)
             {
-                page = 99; 
+                
             }
             else if (page == 31)
             {
-                page = 33;
+                page = 99; 
             }
             else if (page == 32)
             {
-                page = 99;
+                page = 34;
             }
             else if (page == 33)
+            {
+                page = 99;
+            }
+            else if (page == 34)
             {
                 page = 99;
             }
