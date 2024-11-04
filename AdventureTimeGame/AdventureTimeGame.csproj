@@ -59,18 +59,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -139,6 +139,66 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\candykingdom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\candyking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\candylab.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\explodsion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heroending.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frozen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frozenfinn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finnfrozen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iceking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finnsword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finnpunch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swordfinn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swordfinnattack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\secret.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\secretimage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marcelinepissed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nightosphere.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flute.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\midnight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treehousenight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finn.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

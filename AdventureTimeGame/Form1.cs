@@ -99,18 +99,20 @@ namespace AdventureTimeGame
                     option3Label.Text = "";
                     break;
                 case 6:
-                    
+                    imageBox.Image = Properties.Resources.candyking;
                     textBox.Text = "You enter the Candy Kingdom and see PB drinking some tea. Ask for a Quest or Hang out with her?";
                     option1Label.Text = "Red Button: Ask for a Quest";
                     option2Label.Text = "Green Button: Hang out with her";
                     option3Label.Text = "";
                     break;
                 case 7:
+                    
                     textBox.Text = "PB Gave you a quest to Save LSP from the Ice King. Accept or Don't?";
                     option1Label.Text = "Red Button: Accept the Quest";
                     option2Label.Text = "Green Button: Don't Accept";
                     break;
                 case 8:
+                    imageBox.Image = Properties.Resources.candylab;
                     textBox.Text = "You and PB hang out in the Lab doing Experiements. Do you help her?";
                     option1Label.Text = "Red Button: Yes";
                     option2Label.Text = "Green Button: No";
@@ -148,41 +150,47 @@ namespace AdventureTimeGame
                         page = 12;
                         displayPage();
                     }
-                    else if (save > 65)
+                    else if (save >= 65)
                     {
                         page = 11;
                         displayPage();
                     }
                     break;
                 case 11:
+                    imageBox.Image = Properties.Resources.explodsion;
                     scream.Play();
                     textBox.Text = "The Tube explodes in her Hand and there was Gum everywhere.(You gained the Failure Route) Play again?";
                     option1Label.Text = "Red Button: Yes";
                     option2Label.Text = "Green Button: No";
                     break;
                 case 12:
+                    imageBox.Image = Properties.Resources.heroending;
                     textBox.Text = "You saved her from the explosion and she was glad you were there. (You won the Heroic Ending) Play Again?";
                     option1Label.Text = "Red Button: Yes";
                     option2Label.Text = "Green Button: No";
                     break;
                 case 13:
+                    imageBox.Image = Properties.Resources.heroending;
                     textBox.Text = "The chemicals Stabilize and you both create a new Element. (Walter White Ending) Play Again)";
                     option1Label.Text = "Red Button: Yes";
                     option2Label.Text = "Green Button: No";
                     break;
                 case 14:
+                    imageBox.Image = Properties.Resources.explodsion;
                     scream.Play();
                     textBox.Text = "The Chemicals create a huge explosion and you both died. (Failed Chemist Ending) Play Again?";
                     option1Label.Text = "Red Button: Yes";
                     option2Label.Text = "Green Button: No";
                     break;
                 case 15:
+                    imageBox.Image = Properties.Resources.finnfrozen;
                     scream.Play();
                     textBox.Text = "You Go in Loud and get frozen in Ice and ice King gets away (Frozen Ending) Play Again?";
                     option1Label.Text = "Red Button: Yes";
                     option2Label.Text = "Green Button: No";
                     break;
                 case 16:
+                    imageBox.Image = Properties.Resources.iceking;
                     textBox.Text = "Ice King Gets surprised and knocks you back and charges a Ice Beam Dodge it or Deflect?";
                     option1Label.Text = "Red Button: Use your Shield to Deflect";
                     option2Label.Text = "Green Button: Dodge the attack";
@@ -196,12 +204,12 @@ namespace AdventureTimeGame
 
                     dodge = Random.Next(0, 3);
 
-                    if (dodge < 1)
+                    if (dodge <= 1)
                     {
                         page = 18;
                         displayPage();
                     }
-                    else if (dodge > 2)
+                    else if (dodge >= 2)
                     {
                         page = 20;
                         displayPage();
@@ -214,44 +222,52 @@ namespace AdventureTimeGame
                     option2Label.Text = "Green Button: Use your Sword?";
                     break;
                 case 19:
-                    textBox.Text = "Successfully Deflected the Ice beam and froze the Ice king, Lsp was saved (Heroiz Ending)"; option1Label.Text = "Red Button: Yes";
+                    imageBox.Image = Properties.Resources.heroending;
+                    textBox.Text = "Successfully Deflected the Ice beam and froze the Ice king, Lsp was saved (Heroiz Ending) Play Again"; 
                     option1Label.Text = "Red Button: Yes";
                     option2Label.Text = "Green Button: No";
                     break;
                 case 20:
+                    imageBox.Image = Properties.Resources.finnfrozen;
                     scream.Play();
-                    textBox.Text = "You tried to dodge and get hit by the ice beam turning into a Ice Sphere (Frozen Ending)";
+                    textBox.Text = "You tried to dodge and get hit by the ice beam turning into a Ice Sphere (Frozen Ending) Play AGain";
                     option1Label.Text = "Red Button: Yes";
                     option2Label.Text = "Green Button: No";
                     break;
                 case 21:
+                    imageBox.Image = Properties.Resources.swordfinnattack;
                     scream.Play();
-                    textBox.Text = "You used your sword but Ice King Freezes it and then Freezes You (Frozen ending)";
+                    textBox.Text = "You used your sword but Ice King Freezes it and then Freezes You (Frozen ending) PLay AGain";
                     option1Label.Text = "Red Button: Yes";
                     option2Label.Text = "Green Button: No";
                     break;
                 case 22:
+                    imageBox.Image = Properties.Resources.finnpunch;
                     textBox.Text = "You Punch Ice King in the Face Knocking him out. Will you take him to the Candy Kingdom or go Home";
                     option1Label.Text = "Red Button: Take Ice King to the Candy Kingdom";
                     option2Label.Text = "Green Button: Go Home";
                     break;
                 case 23:
-                    textBox.Text = "You take the Ice king to the Candy Kingdom YOU WIN (Ultimate Hero)";
+                    imageBox.Image = Properties.Resources.candyking;
+                    textBox.Text = "You take the Ice king to the Candy Kingdom YOU WIN (Ultimate Hero) Play Again";
                     option1Label.Text = "Red Button: Yes";
                     option2Label.Text = "Green Button: No";
 
                     break;
                 case 24:
-                    textBox.Text = "You Go Home leaving the Ice King Behind (Lazy Hero)";
+                    imageBox.Image = Properties.Resources.treehouse;
+                    textBox.Text = "You Go Home leaving the Ice King Behind (Lazy Hero) Play Again";
                     option1Label.Text = "Red Button: Yes";
                     option2Label.Text = "Green Button: No";
                     break;
                 case 25:
+                    imageBox.Image = Properties.Resources.marcelinepissed;
                     textBox.Text = "You Interrupt Marceline's Song and she gets pissed at you. Calm her down or do nothing?";
                     option1Label.Text = "Red Button: Calm her Down";
                     option2Label.Text = "Green Button: Do Nothing";
                     break;
                 case 26:
+                    imageBox.Image = Properties.Resources.marceline;
                     textBox.Text = "You let Marceline play her song and asks you to join her band";
                     option1Label.Text = "Red Button: Accept to join her band";
                     option2Label.Text = "Green Button: Don't Accept";
@@ -260,16 +276,18 @@ namespace AdventureTimeGame
                     textBox.Text = "You Calm her down and she continues her song";
                     break;
                 case 28:
-                    textBox.Text = "You Do Nothing and you get sent to the Nightnosphere where your soul was sucked (Souless Warrior)";
+                    imageBox.Image = Properties.Resources.nightosphere;
+                    textBox.Text = "You Do Nothing and you get sent to the Nightnosphere where your soul was sucked (Souless Warrior) Play Again";
                     option1Label.Text = "Red Button: Yes";
                     option2Label.Text = "Green Button: No";
                     break;
                 case 29:
-                    textBox.Text = "She Shrugs it off and kicks you out of her house (Boring ending)";
+                    textBox.Text = "She Shrugs it off and kicks you out of her house (Boring ending) Play Again";
                     option1Label.Text = "Red Button: Yes";
                     option2Label.Text = "Green Button: No";
                     break;
                 case 30:
+                    imageBox.Image = Properties.Resources.flute;
                     textBox.Text = "You start playing your flute with Marceline";
                     option1Label.Text = "";
                     option2Label.Text = "";
@@ -283,7 +301,7 @@ namespace AdventureTimeGame
                         page = 32;
                         displayPage();
                     }
-                    else if (flute > 7)
+                    else if (flute >= 7)
                     {
                         page = 31;
                         displayPage();
@@ -291,23 +309,27 @@ namespace AdventureTimeGame
                     Refresh();
                     break;
                 case 31:
+                    imageBox.Image = Properties.Resources.finn;
                     scream.Play();
-                    textBox.Text = "You play horribly and get kicked out of the band (Mid Musician)";
+                    textBox.Text = "You play horribly and get kicked out of the band (Mid Musician) Play Again?";
                     option1Label.Text = "Red Button: Yes";
                     option2Label.Text = "Green Button: No";
                     break;
                 case 32:
+
                     textBox.Text = "You play pretty good and Marceline was Impressed. You're getting tired what do you do?";
                     option1Label.Text = "Red Button: Keep Playing?";
                     option2Label.Text = "Green Button: Go Home";
                     break;
                 case 33:
-                    textBox.Text = "You and Marceline keep playing til midnight (Musical Ending)";
+                    imageBox.Image = Properties.Resources.midnight;
+                    textBox.Text = "You and Marceline keep playing til midnight (Musical Ending) Play Again?";
                     option1Label.Text = "Red Button: Yes";
                     option2Label.Text = "Green Button: No";
                     break;
                 case 34:
-                    textBox.Text = "You go home and sleep after a long day";
+                    imageBox.Image = Properties.Resources.treehousenight;
+                    textBox.Text = "You go home and sleep after a long day. Play Again?";
                     option1Label.Text = "Red Button: Yes";
                     option2Label.Text = "Green Button: No";
                     break;
@@ -320,7 +342,8 @@ namespace AdventureTimeGame
                     Close();
                     break;
                 case 69:
-
+                    imageBox.Image = Properties.Resources.secretimage;
+                    
                     break;
                 default:
                     break;
@@ -481,7 +504,7 @@ namespace AdventureTimeGame
             }
             else if (page == 32)
             {
-                page = 32;
+                page = 33;
             }
             else if (page == 33)
             {
@@ -666,7 +689,7 @@ namespace AdventureTimeGame
         {
             if (page == 1)
             {
-
+                page = 69;
             }
             else if (page == 2)
             {

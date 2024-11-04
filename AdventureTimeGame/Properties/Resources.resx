@@ -157,4 +157,49 @@
   <data name="treehouse" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\treehouse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="candyking" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\candyking.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="candylab" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\candylab.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="explodsion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\explodsion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\finn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finnfrozen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\finnfrozen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="finnpunch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\finnpunch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flute" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flute.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="heroending" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\heroending.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iceking" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iceking.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="marcelinepissed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\marcelinepissed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="midnight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\midnight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nightosphere" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nightosphere.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="secretimage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\secretimage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="swordfinnattack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\swordfinnattack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="treehousenight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\treehousenight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
